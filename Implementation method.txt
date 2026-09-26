@@ -1,0 +1,146 @@
+Phase 1 — Project Setup
+React
+Express
+MongoDB
+Mongoose
+Environment variables
+Basic client/server connection
+Phase 2 — Learning Content
+
+Create actual learning resources:
+
+Topic
+ ├── Resources
+ │    ├── Article
+ │    ├── Video
+ │    ├── Quiz
+ │    ├── Exercise
+ │    └── Documentation
+
+This gives us something real for the user to interact with.
+
+Phase 3 — Activity Tracking
+
+Implement:
+
+Session creation
+Time tracking
+Scroll tracking
+Video tracking
+Quiz tracking
+Exercise tracking
+Search tracking
+Help/hint tracking
+Bookmark/note tracking
+Confidence
+Forum interaction
+Practice
+Teaching/explanation
+Phase 4 — Activity Buffer + Batch API
+React
+ ↓
+local activity buffer
+ ↓
+batch
+ ↓
+POST /api/activities/batch
+ ↓
+Express
+Phase 5 — MongoDB Storage
+
+Create:
+
+User
+Topic
+Resource
+LearningSession
+Activity
+Assessment
+Phase 6 — Feature Engineering
+
+Calculate:
+
+C
+D
+R
+F
+V
+S
+
+Then the additional signals.
+
+Phase 7 — Normalization
+
+Convert different measurements into comparable 0–1 values.
+
+Phase 8 — Mastery Score
+
+Weighted aggregation + time decay.
+
+Phase 9 — State Machine
+Unexplored
+Emerging
+Developing
+Mastered
+
+including transitions and regression when appropriate.
+
+Phase 10 — Mastery History
+
+Track:
+
+score over time
+state over time
+feature changes
+Phase 11 — API
+
+For example:
+
+GET /api/mastery/:userId
+GET /api/mastery/:userId/:topicId
+GET /api/mastery/:userId/:topicId/history
+Phase 12 — Dashboard
+
+Show:
+
+Topic mastery
+Current state
+Score
+C/D/R/F/V/S
+Behavioral signals
+Progress
+History
+Weak areas
+Phase 13 — Advanced Models
+
+Add and compare:
+
+Rule-based
+BKT
+DKT
+IRT
+HMM
+Elo
+Half-Life Regression
+
+where appropriate.
+
+Phase 14 — Validation
+
+Test whether the calculated states make sense using:
+
+Controlled learning sessions
+Historical behavior
+A/B testing
+Model comparison
+Confidence measurements
+Phase 15 — Production Improvements
+
+Finally:
+
+Redis
+Background processing
+Model retraining
+Anomaly detection
+Cold-start handling
+Recommendation/bandit layer
