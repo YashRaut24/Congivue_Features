@@ -7,6 +7,8 @@ const healthRoutes = require("./routes/healthRoutes");
 const topicRoutes = require("./routes/topicRoutes");
 const resourceRoutes = require("./routes/resourceRoutes");
 const activityRoutes = require("./routes/activityRoutes");
+const userRoutes = require("./routes/userRoutes");
+const sessionRoutes = require("./routes/sessionRoutes");
 
 dotenv.config();
 
@@ -26,6 +28,8 @@ app.use("/api/health", healthRoutes);
 app.use("/api/topics", topicRoutes);
 app.use("/api/resources", resourceRoutes);
 app.use("/api/activities", activityRoutes);
+app.use("/api/users", userRoutes);
+app.use("/api/sessions", sessionRoutes);
 
 const PORT = process.env.PORT || 5000;
 
